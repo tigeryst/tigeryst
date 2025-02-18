@@ -1,0 +1,57 @@
+@media (min-width: 800px) {
+  .project {
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-areas:
+      "blank title"
+      "actions icon"
+      "actions description"
+      "actions lessons"
+      "actions tech";
+  }
+
+  .project__title {
+    grid-area: title;
+  }
+
+  .project__icon {
+    grid-area: icon;
+  }
+
+  .project__description {
+    grid-area: description;
+  }
+
+  .project__lessons {
+    grid-area: lessons;
+  }
+
+  .project__tech {
+    grid-area: tech;
+  }
+
+  .project__links {
+    grid-area: actions;
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project__link > * {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .project {
+    grid-template-columns: 0.4fr 1fr;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project {
+    grid-template-columns: 0.3fr 1fr;
+  }
+}

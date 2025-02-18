@@ -1,0 +1,77 @@
+.interests {
+  display: grid;
+  gap: 2em;
+  grid-template-areas:
+    "cooking"
+    "art"
+    "travel"
+    "reading"
+    "running";
+}
+
+.interest {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+  background-size: cover;
+  background-position: center;
+  border: none;
+  position: relative;
+  color: var(--clr-neutral-100);
+  font-weight: var(--fw-normal);
+}
+
+.interest:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  transition: all 0.2s linear;
+}
+
+.interest:hover:before {
+  background: none;
+}
+
+.interest--cooking {
+  grid-area: cooking;
+  background-image: url("/interest-cooking.jpg");
+}
+
+.interest--art {
+  grid-area: art;
+  background-image: url("/interest-art.jpg");
+}
+
+.interest--travel {
+  grid-area: travel;
+  background-image: url("/interest-travel.jpg");
+}
+
+.interest--reading {
+  grid-area: reading;
+  background-image: url("/interest-reading.jpg");
+}
+
+.interest--running {
+  grid-area: running;
+  background-image: url("/interest-running.jpg");
+}
+
+.interest :is(h3, p) {
+  z-index: 1; /* ensure text is on top of the overlay */
+}
+
+@media (min-width: 800px) {
+  .interests {
+    grid-template-areas:
+      "cooking cooking"
+      "art travel"
+      "reading running";
+  }
+}

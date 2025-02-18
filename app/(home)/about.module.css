@@ -1,0 +1,24 @@
+@media (min-width: 800px) {
+  .about-me {
+    display: grid;
+    grid-template-columns: 1fr 0.3fr;
+    grid-template-areas:
+      "title image"
+      "body image";
+    grid-column-gap: 2em;
+    align-items: center;
+  }
+
+  .section__title--about {
+    grid-area: title;
+    text-align: left;
+  }
+
+  .about-me__body {
+    grid-area: body;
+  }
+
+  .about-me__img {
+    grid-area: image;
+  }
+}

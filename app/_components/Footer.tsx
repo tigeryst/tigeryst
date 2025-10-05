@@ -1,82 +1,91 @@
 import Link from "next/link";
-import styles from "./Footer.module.css";
+import { FaGithub, FaLinkedin, FaInstagram, FaFacebook } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className={styles["footer"]}>
-      <ul className={styles["footer-nav"]}>
-        <li className={styles["footer-nav__item"]}>
-          <Link href="#projects" className={styles["footer-nav__link"]}>
+    <footer className="flex flex-col items-center flow | bg-neutral-900 text-neutral-100 text-center py-5 px-3">
+      {/* Links */}
+      <ul className="flex justify-center | list-none m-0 p-0 gap-8">
+        <li>
+          <Link href="#projects" className="no-underline hover:opacity-70">
             Projects
           </Link>
         </li>
-        <li className={styles["footer-nav__item"]}>
-          <Link href="#blogs" className={styles["footer-nav__link"]}>
+        <li>
+          <Link href="#blogs" className="no-underline hover:opacity-70">
             Blogs
           </Link>
         </li>
-        <li className={styles["footer-nav__item"]}>
-          <Link href="#interests" className={styles["footer-nav__link"]}>
+        <li>
+          <Link href="#interests" className="no-underline hover:opacity-70">
             Interests
           </Link>
         </li>
       </ul>
 
+      {/* Contact info */}
       <p>Bangkok, Thailand</p>
       <p>Tiger Yotsawat</p>
-      <ul className="footer__actions flex-row">
+      {/* Call to action */}
+      <ul className="flex | gap-8 list-none w-max p-0 m-0">
         <li>
-          <a href="/cv.pdf" className="button button--primary" download>
+          <a href="/cv.pdf" className="button" data-variant="primary" download>
             Get My CV
           </a>
         </li>
         <li>
           <a
             href="https://www.linkedin.com/in/tigeryotsawat"
-            className="button button--secondary"
+            className="button"
+            data-variant="secondary"
           >
             Contact Me
           </a>
         </li>
       </ul>
 
-      <ul className="social-list">
-        <li className="social-list__item">
-          <a href="https://github.com/tigeryst" className="social-list__link">
-            <i className="fab fa-github"></i>
+      {/* Social links */}
+      <ul className="flex justify-center | list-none m-0 p-0 gap-8 text-2xl">
+        <li>
+          <a
+            href="https://github.com/tigeryst"
+            className="no-underline hover:opacity-70"
+          >
+            <FaGithub />
           </a>
         </li>
-        <li className="social-list__item">
+        <li>
           <a
             href="https://www.linkedin.com/in/tigeryotsawat"
-            className="social-list__link"
+            className="no-underline hover:opacity-70"
           >
-            <i className="fab fa-linkedin"></i>
+            <FaLinkedin />
           </a>
         </li>
-        <li className="social-list__item">
+        <li>
           <a
             href="https://www.instagram.com/tiger.y"
-            className="social-list__link"
+            className="no-underline hover:opacity-70"
           >
-            <i className="fab fa-instagram"></i>
+            <FaInstagram />
           </a>
         </li>
-        <li className="social-list__item">
+        <li>
           <a
             href="https://www.facebook.com/tiger.yotsawat"
-            className="social-list__link"
+            className="no-underline hover:opacity-70"
           >
-            <i className="fab fa-facebook"></i>
+            <FaFacebook />
           </a>
         </li>
       </ul>
 
+      {/* Copyright info */}
       <p>
-        Portfolio site created using NextJS with icons from Font Awesome and
+        Portfolio site created using NextJS with icons from React Icons and
         images from Unsplash
       </p>
-      <p>Copyright &copy; 2021</p>
+      <p>Copyright &copy; {new Date().getFullYear()}</p>
     </footer>
   );
 }

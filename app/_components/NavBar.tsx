@@ -41,10 +41,10 @@ export default function NavBar() {
   };
 
   return (
-    <header
-      className={`text-neutral-100 bg-neutral-900 ${styles["navbar"]} ${
-        isCollapsed ? "" : styles["navbar--expanded"]
-      } ${isScrolled ? styles["navbar--scrolled"] : ""}`}
+    <nav
+      className={`${styles["nav"]} | text-neutral-100 bg-neutral-900`}
+      data-expanded={!isCollapsed}
+      data-scrolled={isScrolled}
     >
       {/* Home */}
       <Link href="/">
@@ -56,13 +56,13 @@ export default function NavBar() {
       </Link>
 
       {/* Links */}
-      <nav className={styles["nav"]}>
-        <ul className={styles["nav-list"]}>
+      <div className={styles["menu"]}>
+        <ul className={styles["list"]}>
           {Object.keys(links).map((name) => (
-            <li key={name} className={styles["nav-item"]}>
+            <li key={name} className={styles["item"]}>
               <Link
                 href={links[name]}
-                className={styles["nav-link"]}
+                className={styles["link"]}
                 onClick={handleLinkClick}
               >
                 {name}
@@ -70,16 +70,16 @@ export default function NavBar() {
             </li>
           ))}
         </ul>
-      </nav>
+      </div>
 
       {/*  Hamburger */}
       <button
-        className={styles["nav-toggle"]}
+        className={styles["toggle"]}
         onClick={handleHamburgerClick}
         aria-label="toggle navigation"
       >
         <span className={styles["hamburger"]}></span>
       </button>
-    </header>
+    </nav>
   );
 }

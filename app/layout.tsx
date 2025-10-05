@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Open_Sans, Lora } from "next/font/google";
-import "./reset.css";
 import "./globals.css";
 import NavBar from "@/app/_components/NavBar";
 import Footer from "@/app/_components/Footer";
@@ -20,7 +19,7 @@ const secondaryFont = Lora({
 export const metadata: Metadata = {
   title: "Tiger Yotsawat | Portfolio Site",
   description:
-    "Welcome to my personal website! I am a data scientist and physicist with an interest in technology. This portfolio site was created to showcase my interests.",
+    "Welcome to my personal website! I am a computer vision scientist, web developer, and tech entrepreneur based in London. This portfolio site was created to showcase my interests.",
 };
 
 export default function RootLayout({
@@ -34,7 +33,9 @@ export default function RootLayout({
       className={`${primaryFont.variable} ${secondaryFont.variable}`}
     >
       <body>
-        <NavBar />
+        <header className="sticky top-0 z-50">
+          <NavBar />
+        </header>
         {children}
         <Footer />
       </body>

@@ -6,12 +6,12 @@ import About from "./about";
 
 export default function Home() {
   return (
-    <>
+    <main>
       <Intro />
       <Projects />
       <Blogs />
       <Interests />
       <About />
-    </>
+    </main>
   );
 }

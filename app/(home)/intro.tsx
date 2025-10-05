@@ -21,8 +21,8 @@ export default function Intro() {
       />
       <p className={styles["body"]}>
         I love watching people interact with new technology. The sense of
-        marvel, the spark of imagination for what's possible, and the hope it
-        inspires for the future is truly magical.
+        marvel, the spark of imagination for what&apos;s possible, and the hope
+        it inspires for the future is truly magical.
       </p>
       <ul className={`${styles["actions"]} flex-row`}>
         <li>

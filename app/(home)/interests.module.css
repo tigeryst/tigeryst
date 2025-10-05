@@ -9,6 +9,7 @@
     "running";
 }
 
+/* Interest card */
 .interest {
   display: flex;
   flex-direction: column;
@@ -18,10 +19,11 @@
   background-position: center;
   border: none;
   position: relative;
-  color: var(--clr-neutral-100);
-  font-weight: var(--fw-normal);
+  color: theme("colors.neutral.100");
+  font-weight: theme("fontWeight.regular");
 }
 
+/* Overlay for readability */
 .interest:before {
   content: "";
   display: block;
@@ -30,40 +32,41 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
   transition: all 0.2s linear;
 }
 
+/* Brighten the overlay on hover */
 .interest:hover:before {
-  background: none;
+  background: rgba(0, 0, 0, 0.3);
 }
 
-.interest--cooking {
+.interest[data-theme="cooking"] {
   grid-area: cooking;
   background-image: url("/interest-cooking.jpg");
 }
 
-.interest--art {
+.interest[data-theme="art"] {
   grid-area: art;
   background-image: url("/interest-art.jpg");
 }
 
-.interest--travel {
+.interest[data-theme="travel"] {
   grid-area: travel;
   background-image: url("/interest-travel.jpg");
 }
 
-.interest--reading {
+.interest[data-theme="reading"] {
   grid-area: reading;
   background-image: url("/interest-reading.jpg");
 }
 
-.interest--running {
+.interest[data-theme="running"] {
   grid-area: running;
   background-image: url("/interest-running.jpg");
 }
 
-.interest :is(h3, p) {
+.interest :is(h3, p, a) {
   z-index: 1; /* ensure text is on top of the overlay */
 }
 
@@ -73,5 +76,12 @@
       "cooking cooking"
       "art travel"
       "reading running";
+  }
+}
+
+@media (min-width: 1400px) {
+  .interests {
+    max-width: 80%;
+    margin-inline: auto;
   }
 }

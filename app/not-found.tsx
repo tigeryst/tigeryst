@@ -4,10 +4,10 @@ import spaceImg from "@/public/404.svg";
 
 export default function NotFound() {
   return (
-    <div className="not-found">
-      <div className="not-found__content">
-        <h1 className="not-found__title">Page Not Found</h1>
-        <p className="not-found__text">
+    <div className="flex flex-col items-center justify-center | p-8 min-h-[50vh] | gap-8">
+      <div className="text-center max-w-[600px]">
+        <h1 className="text-accent-400 mb-4">Page Not Found</h1>
+        <p className="text-neutral-400 leading-relaxed">
           Hi! Looks like you landed on a page that does not yet exist. It is
           highly likely that I am still working on the page (this site is a work
           in progress) or it is temporarily unavailable. Check your URL or{" "}
@@ -19,7 +19,7 @@ export default function NotFound() {
       </div>
 
       <Image
-        className="not-found__img"
+        className="max-w-[400px] w-full h-auto"
         src={spaceImg}
         alt="an astronaut floating in a remote, undiscovered location"
       />

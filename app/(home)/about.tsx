@@ -4,14 +4,10 @@ import styles from "./about.module.css";
 
 export default function About() {
   return (
-    <section className={`flow ${styles["about-me"]}`} id="about">
-      <h2
-        className={`section__title text-center ${styles["section__title--about"]}`}
-      >
-        About Me
-      </h2>
+    <section className={`${styles["section"]} flow grid`} id="about">
+      <h2 className={`${styles["title"]} section-title`}>About Me</h2>
 
-      <div className="flow">
+      <div className={`${styles["body"]} flow`}>
         <p>
           Hi, glad you&apos;re here! My name is Tiger, a data scientist based in
           Bangkok, Thailand. I have always been fascinated by technology and
@@ -53,7 +49,7 @@ export default function About() {
       </div>
 
       <Image
-        className={`${styles["about-me__img"]} shadow`}
+        className={`${styles["image"]} shadow-custom`}
         src={aboutImg}
         alt="Tiger chilling on a picnic mat on a nice sunny day"
       />

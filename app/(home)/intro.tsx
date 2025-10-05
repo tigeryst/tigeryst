@@ -5,14 +5,14 @@ import styles from "./intro.module.css";
 export default function Intro() {
   return (
     <section
-      className={`grid justify-items-center flow ${styles["intro"]}`}
+      className={`${styles["section"]} grid justify-items-center | flow`}
       id="home"
     >
-      <h1 className={`section__title ${styles["title"]}`}>Tiger Yotsawat</h1>
-      <ul className={`fs-300 ${styles["roles"]}`}>
-        <li className={styles["role"]}>Tech Enthusiast</li>
-        <li className={styles["role"]}>ML Engineer</li>
+      <h1 className={`${styles["title"]} section-title`}>Tiger Yotsawat</h1>
+      <ul className={styles["roles"]}>
+        <li className={styles["role"]}>Computer Vision Scientist</li>
         <li className={styles["role"]}>Web Developer</li>
+        <li className={styles["role"]}>Tech Entrepreneur</li>
       </ul>
       <Image
         src={introImg}
@@ -20,21 +20,26 @@ export default function Intro() {
         className={styles["image"]}
       />
       <p className={styles["body"]}>
-        &quot;Any technology sufficiently advanced enough is indistinguishable
-        from magic.&quot; I&apos;m learning a little more everyday so that one
-        day I might create my own little magic that would spark the creation of
-        even more new magic.
+        I love watching people interact with new technology. The sense of
+        marvel, the spark of imagination for what's possible, and the hope it
+        inspires for the future is truly magical.
       </p>
       <ul className={`${styles["actions"]} flex-row`}>
         <li>
-          <a href="/cv.pdf" className="button button--primary" download>
+          <a
+            href="/tiger-yotsawat-cv.pdf"
+            className="button"
+            data-variant="primary"
+            download
+          >
             Get My CV
           </a>
         </li>
         <li>
           <a
             href="https://www.linkedin.com/in/tigeryotsawat"
-            className="button button--secondary"
+            className="button"
+            data-variant="secondary"
           >
             Contact Me
           </a>

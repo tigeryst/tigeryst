@@ -1,25 +1,23 @@
 import Link from "next/link";
-import styles from "./projects.module.css";
+import { FaReact } from "react-icons/fa";
+import { SiExpress, SiMongodb } from "react-icons/si";
 
 export default function Projects() {
   return (
     <section
-      className="text-neutral-100 bg-neutral-900 text-center flow"
+      className="flow | text-neutral-100 bg-neutral-900 text-center"
       id="projects"
     >
-      <h2 className="section__title section__title--accent">Projects</h2>
-      <p className="section__subtitle mx-auto">What I Do</p>
+      <h2 className="section-title" data-accent>
+        Projects
+      </h2>
+      <p className="section-subtitle">What I Do</p>
 
-      <div className="flow-lg text-start mb-5">
-        <div className={`flow ${styles["project"]}`}>
-          <p
-            className={`fs-500 mx-auto text-center ${styles["project__title"]}`}
-          >
-            ERP Application
-          </p>
-          <i className={styles["project__icon"]}></i>
+      <div className="flow-lg mb-5">
+        <article className="flow">
+          <h3>ERP Application</h3>
 
-          <div className={`flow ${styles["project__description"]}`}>
+          <div className="flow">
             <p>
               This project was the first full stack web application that I built
               from scratch. The goal was to automate the main business processes
@@ -32,8 +30,8 @@ export default function Projects() {
               .
             </p>
           </div>
-          <div className={`flow ${styles["project__lessons"]}`}>
-            <p className="mx-auto text-center">Learning Points</p>
+          <div className="flow">
+            <h4>Learning Points</h4>
             <p>
               I constantly learned new skills, all of which I incorporated into
               this still-evolving project so I guess this learning points
@@ -52,50 +50,50 @@ export default function Projects() {
               easy to reason with.
             </p>
           </div>
-          <div className={`flow ${styles["project__tech"]}`}>
-            <p className="mx-auto text-center">Tech Stack</p>
-            <ul className="tech-stack">
-              <li className="tech-stack__item">
-                <i className="fab fa-react"></i>
+          <div className="flow">
+            <h4>Tech Stack</h4>
+            <ul className="flex justify-center | gap-6 text-4xl list-none p-0">
+              <li>
+                <FaReact />
               </li>
-              <li className="tech-stack__item">
-                <i className="fab fa-react"></i>
+              <li>
+                <SiExpress />
               </li>
-              <li className="tech-stack__item">
-                <i className="fab fa-react"></i>
+              <li>
+                <SiMongodb />
               </li>
             </ul>
           </div>
-          <ul className={`flex-row justify-center ${styles["project__links"]}`}>
-            <li className={styles["project__link"]}>
-              <Link href="/projects" className="button button-secondary">
+          <ul className="flex flex-col gap-2 | list-none p-0 sm:flex-row sm:justify-center">
+            <li>
+              <Link
+                href="/projects"
+                className="button"
+                data-variant="secondary"
+              >
                 demo
               </Link>
             </li>
-            <li className={styles["project__link"]}>
-              <Link href="/projects" className="button button--primary">
+            <li>
+              <Link href="/projects" className="button" data-variant="primary">
                 read more
               </Link>
             </li>
-            <li className={styles["project__link"]}>
+            <li>
               <a
                 href="https://github.com/tigeryst"
-                className="button button--secondary"
+                className="button"
+                data-variant="secondary"
               >
                 github
               </a>
             </li>
           </ul>
-        </div>
+        </article>
 
-        <div className={`flow ${styles["project"]}`}>
-          <p
-            className={`fs-500 mx-auto text-center ${styles["project__title"]}`}
-          >
-            Pablo App
-          </p>
-          <i className={styles["project__icon"]}></i>
-          <div className={`flow ${styles["project__description"]}`}>
+        <article className="flow">
+          <h3>Pablo App</h3>
+          <div className="flow">
             <p>
               Pablo is a simple card game that my friends and I used to always
               play whenever we get together. Because the game can and does get
@@ -117,8 +115,8 @@ export default function Projects() {
               from Cabo.
             </p>
           </div>
-          <div className={`flow ${styles["project__lessons"]}`}>
-            <p className="mx-auto text-center">Learning Points</p>
+          <div className="flow">
+            <h4>Learning Points</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -126,50 +124,50 @@ export default function Projects() {
               nisi ut aliquip ex ea commodo consequat.
             </p>
           </div>
-          <div className={`flow ${styles["project__tech"]}`}>
-            <p className="mx-auto text-center">Tech Stack</p>
-            <ul className="tech-stack">
-              <li className="tech-stack__item">
-                <i className="fab fa-react"></i>
+          <div className="flow">
+            <h4>Tech Stack</h4>
+            <ul className="flex justify-center | gap-6 text-4xl list-none p-0">
+              <li>
+                <FaReact />
               </li>
-              <li className="tech-stack__item">
-                <i className="fab fa-react"></i>
+              <li>
+                <SiExpress />
               </li>
-              <li className="tech-stack__item">
-                <i className="fab fa-react"></i>
+              <li>
+                <SiMongodb />
               </li>
             </ul>
           </div>
-          <ul className={`flex-row justify-center ${styles["project__links"]}`}>
-            <li className={styles["project__link"]}>
-              <Link href="/projects" className="button button--secondary">
+          <ul className="flex flex-col gap-2 | list-none p-0 sm:flex-row sm:justify-center">
+            <li>
+              <Link
+                href="/projects"
+                className="button"
+                data-variant="secondary"
+              >
                 demo
               </Link>
             </li>
-            <li className={styles["project__link"]}>
-              <Link href="/projects" className="button button--primary">
+            <li>
+              <Link href="/projects" className="button" data-variant="primary">
                 read more
               </Link>
             </li>
-            <li className={styles["project__link"]}>
+            <li>
               <a
                 href="https://github.com/tigeryst"
-                className="button button--secondary"
+                className="button"
+                data-variant="secondary"
               >
                 github
               </a>
             </li>
           </ul>
-        </div>
+        </article>
 
-        <div className={`flow ${styles["project"]}`}>
-          <p
-            className={`fs-500 mx-auto text-center ${styles["project__title"]}`}
-          >
-            Yelp Camp
-          </p>
-          <i className={styles["project__icon"]}></i>
-          <div className={`flow ${styles["project__description"]}`}>
+        <article className="flow">
+          <h3>Yelp Camp</h3>
+          <div className="flow">
             <p>
               Yelp Camp, dubbed the greatest web dev project ever, is part of
               Colt Steele&apos;s famous course on{" "}
@@ -190,8 +188,8 @@ export default function Projects() {
             </p>
           </div>
 
-          <div className={`flow ${styles["project__lessons"]}`}>
-            <p className="mx-auto text-center">Learning Points</p>
+          <div className="flow">
+            <h4>Learning Points</h4>
             <p>
               This project taught me the basics of many important aspects of web
               development. This included the MVC structure, server-side
@@ -200,44 +198,49 @@ export default function Projects() {
               authentication and authorisation.
             </p>
           </div>
-          <div className={`flow ${styles["project__tech"]}`}>
-            <p className="mx-auto text-center">Tech Stack</p>
-            <ul className="tech-stack">
-              <li className="tech-stack__item">
-                <i className="fab fa-react"></i>
+          <div className="flow">
+            <h4>Tech Stack</h4>
+            <ul className="flex justify-center | gap-6 text-4xl list-none p-0">
+              <li>
+                <FaReact />
               </li>
-              <li className="tech-stack__item">
-                <i className="fab fa-react"></i>
+              <li>
+                <SiExpress />
               </li>
-              <li className="tech-stack__item">
-                <i className="fab fa-react"></i>
+              <li>
+                <SiMongodb />
               </li>
             </ul>
           </div>
-          <ul className={`flex-row justify-center ${styles["project__links"]}`}>
-            <li className={styles["project__link"]}>
-              <Link href="/projects" className="button button--secondary">
+          <ul className="flex flex-col gap-2 | list-none p-0 sm:flex-row sm:justify-center">
+            <li>
+              <Link
+                href="/projects"
+                className="button"
+                data-variant="secondary"
+              >
                 demo
               </Link>
             </li>
-            <li className={styles["project__link"]}>
-              <Link href="/projects" className="button button--primary">
+            <li>
+              <Link href="/projects" className="button" data-variant="primary">
                 read more
               </Link>
             </li>
-            <li className={styles["project__link"]}>
+            <li>
               <a
                 href="https://github.com/tigeryst"
-                className="button button--secondary"
+                className="button"
+                data-variant="secondary"
               >
                 github
               </a>
             </li>
           </ul>
-        </div>
+        </article>
       </div>
 
-      <Link href="/projects" className="button button--primary">
+      <Link href="/projects" className="button" data-variant="primary">
         see more projects
       </Link>
     </section>

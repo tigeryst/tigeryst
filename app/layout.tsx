@@ -28,10 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${primaryFont.variable} ${secondaryFont.variable}`}
-    >
+    <html lang="en" className={`${primaryFont.variable} ${secondaryFont.variable}`}>
       <body>
         <header className="sticky top-0 z-50">
           <NavBar />

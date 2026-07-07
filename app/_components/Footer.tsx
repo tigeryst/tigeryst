@@ -29,7 +29,7 @@ export default function Footer() {
       {/* Call to action */}
       <ul className="flex | gap-8 list-none w-max p-0 m-0">
         <li>
-          <a href="/cv.pdf" className="button" data-variant="primary" download>
+          <a href="/tiger-yotsawat-cv.pdf" className="button" data-variant="primary" download>
             Get My CV
           </a>
         </li>

@@ -47,10 +47,7 @@ export default function Footer() {
       {/* Social links */}
       <ul className="flex justify-center | list-none m-0 p-0 gap-8 text-2xl">
         <li>
-          <a
-            href="https://github.com/tigeryst"
-            className="no-underline hover:opacity-70"
-          >
+          <a href="https://github.com/tigeryst" className="no-underline hover:opacity-70">
             <FaGithub />
           </a>
         </li>
@@ -63,10 +60,7 @@ export default function Footer() {
           </a>
         </li>
         <li>
-          <a
-            href="https://www.instagram.com/tiger.y"
-            className="no-underline hover:opacity-70"
-          >
+          <a href="https://www.instagram.com/tiger.y" className="no-underline hover:opacity-70">
             <FaInstagram />
           </a>
         </li>
@@ -82,8 +76,7 @@ export default function Footer() {
 
       {/* Copyright info */}
       <p>
-        Portfolio site created using NextJS with icons from React Icons and
-        images from Unsplash
+        Portfolio site created using NextJS with icons from React Icons and images from Unsplash
       </p>
       <p>Copyright &copy; {new Date().getFullYear()}</p>
     </footer>

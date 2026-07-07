@@ -4,10 +4,7 @@ import styles from "./intro.module.css";
 
 export default function Intro() {
   return (
-    <section
-      className={`${styles["section"]} grid justify-items-center | flow`}
-      id="home"
-    >
+    <section className={`${styles["section"]} grid justify-items-center | flow`} id="home">
       <h1 className={`${styles["title"]} section-title`}>Tiger Yotsawat</h1>
       <ul className={styles["roles"]}>
         <li className={styles["role"]}>Computer Vision Scientist</li>
@@ -20,18 +17,13 @@ export default function Intro() {
         className={styles["image"]}
       />
       <p className={styles["body"]}>
-        I love watching people interact with new technology. The sense of
-        marvel, the spark of imagination for what&apos;s possible, and the hope
-        it inspires for the future is truly magical.
+        I love watching people interact with new technology. The sense of marvel, the spark of
+        imagination for what&apos;s possible, and the hope it inspires for the future is truly
+        magical.
       </p>
       <ul className={`${styles["actions"]} flex-row`}>
         <li>
-          <a
-            href="/tiger-yotsawat-cv.pdf"
-            className="button"
-            data-variant="primary"
-            download
-          >
+          <a href="/tiger-yotsawat-cv.pdf" className="button" data-variant="primary" download>
             Get My CV
           </a>
         </li>

@@ -19,14 +19,12 @@ export default function Blogs() {
             May 30, 2022
           </time>
           <p className="text-neutral-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quos. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Quisquam, quos.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
           </p>
         </article>
 
@@ -40,12 +38,11 @@ export default function Blogs() {
             January 1, 2022
           </time>
           <p className="ms-0 text-neutral-400">
-            Learning to invest is something that I found really challenging.
-            With all the jargons to learn and all the noise and hype to filter
-            out from genuine advice, it can be a tough maze to navigate for new
-            investors. In this post, I hope to highlight key resources which I
-            found really useful in learning the basics of investing and to share
-            some of the learning points that I came across over the past year.
+            Learning to invest is something that I found really challenging. With all the jargons to
+            learn and all the noise and hype to filter out from genuine advice, it can be a tough
+            maze to navigate for new investors. In this post, I hope to highlight key resources
+            which I found really useful in learning the basics of investing and to share some of the
+            learning points that I came across over the past year.
           </p>
         </article>
 
@@ -59,17 +56,14 @@ export default function Blogs() {
             December 30, 2021
           </time>
           <p className="ms-0 text-neutral-400">
-            Web development is my favourite hobby. There is just so much to
-            learn in this broad field, and with all the different web
-            applications that we see and use on a day to day basis, we can all
-            probably appreciate that the possibilities are endless. This blog is
-            my attempt to record my journey from &ldquo;Wow, this website has
-            such a smooth interface.&rdquo; to &ldquo;Hey, I can probably build
-            something like this!&rdquo;. I hope that by sharing my experience
-            learning web development, this would hint at possible footholds to
-            people staring at this seemingly tall wall dividing the
-            &lsquo;creators&rsquo; from the &lsquo;users&rsquo;, wondering how
-            to scale it.
+            Web development is my favourite hobby. There is just so much to learn in this broad
+            field, and with all the different web applications that we see and use on a day to day
+            basis, we can all probably appreciate that the possibilities are endless. This blog is
+            my attempt to record my journey from &ldquo;Wow, this website has such a smooth
+            interface.&rdquo; to &ldquo;Hey, I can probably build something like this!&rdquo;. I
+            hope that by sharing my experience learning web development, this would hint at possible
+            footholds to people staring at this seemingly tall wall dividing the
+            &lsquo;creators&rsquo; from the &lsquo;users&rsquo;, wondering how to scale it.
           </p>
         </article>
       </div>

@@ -48,11 +48,7 @@ export default function NavBar() {
     >
       {/* Home */}
       <Link href="/">
-        <Image
-          className="max-w-[30px]"
-          src={logoImg}
-          alt="Logo: white TY on a black background"
-        />
+        <Image className="max-w-[30px]" src={logoImg} alt="Logo: white TY on a black background" />
       </Link>
 
       {/* Links */}
@@ -60,11 +56,7 @@ export default function NavBar() {
         <ul className={styles["list"]}>
           {Object.keys(links).map((name) => (
             <li key={name} className={styles["item"]}>
-              <Link
-                href={links[name]}
-                className={styles["link"]}
-                onClick={handleLinkClick}
-              >
+              <Link href={links[name]} className={styles["link"]} onClick={handleLinkClick}>
                 {name}
               </Link>
             </li>

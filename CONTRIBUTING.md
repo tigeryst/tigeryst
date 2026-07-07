@@ -28,7 +28,8 @@ A husky pre-commit hook runs ESLint and Prettier on staged files. CI (`.github/w
 
 ## Conventions
 
-- I commit directly to `main` with short imperative subjects ("Fix apostrophe bug"). No release tooling: the site has no versions or changelog, so Conventional Commits buy nothing here.
+- Conventional Commits ("fix: correct apostrophe escaping"), matching my other repos. A commitlint hook enforces the format on every commit. There's no release tooling here (no versions or changelog), so the payoff is consistency, not automation.
+- I commit directly to `main` for small changes and branch for anything I want CI to check first.
 - Keep `main` green: CI runs on every push, and I only deploy from a green `main`.
 - Architecture and styling conventions are in [`AGENTS.md`](AGENTS.md) (CUBE CSS with Tailwind, CSS Modules for the complex cases).
 

@@ -29,8 +29,8 @@ A husky pre-commit hook runs ESLint and Prettier on staged files. CI (`.github/w
 ## Conventions
 
 - Conventional Commits ("fix: correct apostrophe escaping"), matching my other repos. A commitlint hook enforces the format on every commit. There's no release tooling here (no versions or changelog), so the payoff is consistency, not automation.
-- I commit directly to `main` for small changes and branch for anything I want CI to check first.
-- Keep `main` green: CI runs on every push, and I only deploy from a green `main`.
+- Work on branches named `<type>/<what>` and open a PR into `main`; CI must pass. Squash-merge: the PR title must be a valid Conventional Commit (a workflow lints it) because it becomes the commit subject on `main`.
+- Keep `main` green: I only deploy from a green `main`.
 - Architecture and styling conventions are in [`AGENTS.md`](AGENTS.md) (CUBE CSS with Tailwind, CSS Modules for the complex cases).
 
 ## Deploying
